@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-section { margin: 20px 0; padding: 20px; border: 1px solid #ccc; }
+        .success { color: green; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>eDNA Explorer Dashboard Test</h1>
+    
+    <div class="test-section">
+        <h2>Test 1: Check if the application is running</h2>
+        <p>Open your browser and navigate to <a href="http://localhost:5173" target="_blank">http://localhost:5173</a></p>
+        <p>You should see the eDNA Analysis Pipeline interface.</p>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test 2: Upload Sample Data</h2>
+        <p>1. Click "Download Sample Data" to get a sample CSV file</p>
+        <p>2. Upload the sample data using the file upload interface</p>
+        <p>3. Click "Process Dataset" to proceed</p>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test 3: Process Data</h2>
+        <p>1. Click "Start AI Analysis" to begin processing</p>
+        <p>2. Wait for the processing to complete</p>
+        <p>3. You should see processing steps with progress bars</p>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test 4: View Dashboard</h2>
+        <p>1. After processing, navigate to "Biodiversity Assessment" tab</p>
+        <p>2. You should see:</p>
+        <ul>
+            <li>Biodiversity metrics cards (Species Richness, Shannon Index, etc.)</li>
+            <li>Taxonomy composition charts</li>
+            <li>Diversity analysis tabs</li>
+            <li>Novel taxa clusters</li>
+            <li>Spatial distribution charts</li>
+        </ul>
+    </div>
+    
+    <div class="test-section">
+        <h2>Common Issues and Solutions</h2>
+        <h3>If charts are not showing:</h3>
+        <ul>
+            <li>Check browser console for errors (F12 → Console)</li>
+            <li>Ensure data has been processed successfully</li>
+            <li>Verify that processedData is not null</li>
+        </ul>
+        
+        <h3>If dashboard is empty:</h3>
+        <ul>
+            <li>Make sure you've completed the data processing step</li>
+            <li>Check that the "analyze" tab is selected</li>
+            <li>Verify that processedData contains valid data</li>
+        </ul>
+        
+        <h3>If processing fails:</h3>
+        <ul>
+            <li>Check that your CSV file has the required columns</li>
+            <li>Ensure data is in the correct format</li>
+            <li>Try with the sample data first</li>
+        </ul>
+    </div>
+    
+    <script>
+        console.log("Dashboard test page loaded");
+        console.log("Navigate to http://localhost:5173 to test the application");
+    </script>
+</body>
+</html>
+
